@@ -8,7 +8,7 @@ from .models import Company
 @api_view(['GET', 'POST'])
 
 def validate_user(request, username, password):
-  if request.method == 'POST':
+  if request.method == 'GET':
     try:
       data = Company.objects.get(username=username, password = password)
     except:
