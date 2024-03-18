@@ -5,7 +5,7 @@ from rest_framework import status
 from.serializer import CompanyRegisterSeralizer, SendDataSeralizer, UserSeralizer
 from .models import Company
 
-@api_view(['GET', 'POST'])
+@api_view(['POST'])
 
 def validate_user(request):
   if request.method == 'POST':
