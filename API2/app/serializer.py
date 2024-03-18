@@ -13,3 +13,8 @@ class SendDataSeralizer(serializers.ModelSerializer):
   class Meta:
     model = Company
     fields = ['company_name', 'logo', 'location']
+    
+class UserSeralizer(serializers.ModelSerializer):
+  class Meta:
+    model = Company
+    fields = ['username', 'password']
